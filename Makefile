@@ -13,3 +13,8 @@ lint:
 	black .
 
 l: lint
+
+setup:
+	./setup.sh
+
+s: setup
