@@ -206,9 +206,9 @@ Press CTRL+C to quit
 
 ## TODO
 
-- find a better way to make internal requests
-- wrapp requests on try/except
-- Logging
+1. find a better way to make internal requests
+2. wrapp requests on try/except
+3. Logging
 
 ## DONE
 
