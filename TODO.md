@@ -1,7 +1,8 @@
 # TODO
 
 - Project cleanup
-- Error handling
+- find a better way to make internal requests
+- wrapp requests on try/except
 - Logging
 
 # DONE
