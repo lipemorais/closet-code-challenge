@@ -10,6 +10,7 @@ packages = [{include = "close_code_challenge"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 Flask = "^2.3.2"
+redis = "^4.5.4"
 
 [tool.poetry.group.dev.dependencies]
 pytest-ruff = "^0.0.6"
