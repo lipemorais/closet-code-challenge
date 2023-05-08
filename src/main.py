@@ -6,7 +6,6 @@ import redis
 from flask import Flask
 
 app = Flask(__name__)
-os.getenv("")
 
 redis_url = os.getenv("REDIS_URL", "redis://redis:6379?decode_responses=True")
 redis_connection = redis.from_url(redis_url)
@@ -33,9 +32,28 @@ def stats():
     return {"urls": stats}
 
 
+@app.post("/test/<int:number_of_requests>")
+def test(number_of_requests):
+    random_urls = generate_random_urls(number_of_requests)
+    requests_made = []
+    client = app.test_client()  # TODO: find a better way to make internal requests
+
+    for url in random_urls:
+        response = client.get(f"/api{url}")  # TODO: wrapp requests on try/except
+        # Assuming here that may the requests can fail
+        if response.status_code == 200:
+            requests_made.append(url)
+
+    return {
+        "number of requests": number_of_requests,
+        "requests": requests_made,
+    }
+
+
+# Auxiliary functions for the test endpoint
 def generate_random_segment():
     letters = string.ascii_lowercase
-    result_str = "".join(random.choice(letters) for i in range(3))
+    result_str = "".join(random.choice(letters) for _ in range(3))
 
     return result_str
 
@@ -66,21 +84,3 @@ def generate_random_urls(number_of_urls):
         random_urls.append(create_one_random_url(number_of_segments, pool_of_segments))
 
     return random_urls
-
-
-@app.post("/test/<int:number_of_requests>")
-def test(number_of_requests):
-    random_urls = generate_random_urls(number_of_requests)
-    requests_made = []
-    client = app.test_client()
-
-    for url in random_urls:
-        response = client.get(f"/api{url}")
-        # Assuming here that may the requests can fail
-        if response.status_code == 200:
-            requests_made.append(url)
-
-    return {
-        "number of requests": number_of_requests,
-        "requests": requests_made,
-    }
