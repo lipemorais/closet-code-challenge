@@ -1,2 +1,0 @@
-# Architectural Decision Record
-1. I'm assuming that the sentence "/api/xyz/abc/ghi/ (Invalid: 4 different random strings were used for path segments in this test run)" is wrong because the example doesn't make sentence with the explanation. So I will just assume that I can't have random_urls with 4 different segments, 3 is the maximum
