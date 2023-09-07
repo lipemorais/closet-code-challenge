@@ -68,7 +68,7 @@ output
 ```bash
 ❯ make s
 ./setup.sh
-Creating virtualenv close-code-challenge-i9dRl-ji-py3.11 in /Users/felipython/Library/Caches/pypoetry/virtualenvs
+Creating virtualenv closet-code-challenge-i9dRl-ji-py3.11 in /Users/felipython/Library/Caches/pypoetry/virtualenvs
 Installing dependencies from lock file
 
 Package operations: 22 installs, 0 updates, 0 removals
@@ -96,11 +96,11 @@ Package operations: 22 installs, 0 updates, 0 removals
   • Installing pytest-ruff (0.0.6)
   • Installing redis (4.5.4)
 
-/Users/felipython/dev/python/code-challenges/close-code-challenge/close_code_challenge does not contain any element
+/Users/felipython/dev/python/code-challenges/closet-code-challenge/close_code_challenge does not contain any element
 ================================================================================================================================== test session starts ===================================================================================================================================
-platform darwin -- Python 3.11.3, pytest-7.3.1, pluggy-1.0.0 -- /Users/felipython/Library/Caches/pypoetry/virtualenvs/close-code-challenge-i9dRl-ji-py3.11/bin/python
+platform darwin -- Python 3.11.3, pytest-7.3.1, pluggy-1.0.0 -- /Users/felipython/Library/Caches/pypoetry/virtualenvs/closet-code-challenge-i9dRl-ji-py3.11/bin/python
 cachedir: .pytest_cache
-rootdir: /Users/felipython/dev/python/code-challenges/close-code-challenge
+rootdir: /Users/felipython/dev/python/code-challenges/closet-code-challenge
 configfile: pytest.ini
 testpaths: tests
 plugins: ruff-0.0.6, cov-4.0.0
@@ -121,14 +121,14 @@ tests/test_main.py::test_generate_random_urls PASSED                            
 0.00s call     tests/test_main.py::test_api_endpoint
 0.00s setup    tests/test_main.py::test_root
 =================================================================================================================================== 7 passed in 0.59s ====================================================================================================================================
-Spawning shell within /Users/felipython/Library/Caches/pypoetry/virtualenvs/close-code-challenge-i9dRl-ji-py3.11
-. /Users/felipython/Library/Caches/pypoetry/virtualenvs/close-code-challenge-i9dRl-ji-py3.11/bin/activate
+Spawning shell within /Users/felipython/Library/Caches/pypoetry/virtualenvs/closet-code-challenge-i9dRl-ji-py3.11
+. /Users/felipython/Library/Caches/pypoetry/virtualenvs/closet-code-challenge-i9dRl-ji-py3.11/bin/activate
 
 The default interactive shell is now zsh.
 To update your account to use zsh, please run `chsh -s /bin/zsh`.
 For more details, please visit https://support.apple.com/kb/HT208050.
-bash-3.2$ . /Users/felipython/Library/Caches/pypoetry/virtualenvs/close-code-challenge-i9dRl-ji-py3.11/bin/activate
-(close-code-challenge-py3.11) bash-3.2$ exit
+bash-3.2$ . /Users/felipython/Library/Caches/pypoetry/virtualenvs/closet-code-challenge-i9dRl-ji-py3.11/bin/activate
+(closet-code-challenge-py3.11) bash-3.2$ exit
 exit
 ```
 
@@ -142,9 +142,9 @@ output
 ❯ make t
 pytest
 ================================================================================================================================== test session starts ===================================================================================================================================
-platform darwin -- Python 3.11.3, pytest-7.3.1, pluggy-1.0.0 -- /Users/felipython/Library/Caches/pypoetry/virtualenvs/close-code-challenge-i9dRl-ji-py3.11/bin/python
+platform darwin -- Python 3.11.3, pytest-7.3.1, pluggy-1.0.0 -- /Users/felipython/Library/Caches/pypoetry/virtualenvs/closet-code-challenge-i9dRl-ji-py3.11/bin/python
 cachedir: .pytest_cache
-rootdir: /Users/felipython/dev/python/code-challenges/close-code-challenge
+rootdir: /Users/felipython/dev/python/code-challenges/closet-code-challenge
 configfile: pytest.ini
 testpaths: tests
 plugins: ruff-0.0.6, cov-4.0.0

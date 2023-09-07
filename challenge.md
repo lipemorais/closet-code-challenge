@@ -10,7 +10,7 @@ a Docker Compose environment.
 
 The Flask app should count every request by URL path and store this metric in Redis.
 This will form the basis of a component that has a wide range of uses like
-[request limiting](https://developer.close.io/#ratelimits), capacity planning, cost accounting, etc.
+request limiting, capacity planning, cost accounting, etc.
 
 It should handle the following three sets of endpoints:
 
@@ -43,14 +43,10 @@ It should handle the following three sets of endpoints:
 
 ### Grading & Submission
 
-Your solution will be evaluated as if it were a pull request for a feature that would serve Close customers from
+Your solution will be evaluated as if it were a pull request for a feature that would serve our customers from
 production infrastructure. It will be graded on functionality, completeness, documentation, cleanliness, production
 readiness, and code structure. If you are unsure of a requirement just make a reasonable assumption and add a comment in
 your code.
 
 Create a `.zip` of your project and include a README containing an overview of your solution with a self-critique
 explaining what you would continue iterating on if you had more time.
-
-To submit, email it
-to [be-takehome@close.com with subject "Backend Takehome"](mailto:be-takehome@close.com?Subject=Backend%20Takehome).
-Please don't make this problem or project public.

@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "close-code-challenge"
+name = "closet-code-challenge"
 version = "0.1.0"
 description = "Code challange for Close"
 authors = ["y"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "close_code_challenge"}]
+packages = [{ include = "closet_code_challenge" }]
 
 [tool.poetry.dependencies]
 python = "^3.11"
